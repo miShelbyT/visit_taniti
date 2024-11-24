@@ -8,8 +8,8 @@
 
   /* secondary  */
   --dimgray: #676767;
-  --silver: #BDBDBD;
-  --offwhite: #EBEBEB;
+  --greige: #cbc8c8;
+  --offwhite: #e4dddd;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   height: 100vh;
-  background-color: var(--offwhite);
+  background-color: var(--greige);
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -34,6 +34,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(rgba(246, 230, 230, 0.1), rgba(117, 113, 113, 0.3)), url("assets/shells.jpg");
+  border: 2px solid var(--dimgray);
 }
 
 nav ul {
@@ -44,7 +46,8 @@ nav ul {
 
 nav a {
   padding: 15px 10px;
-  color: var(--dimgray);
+  color: black;
+  font-size: 18px;
 }
 
 
@@ -55,13 +58,18 @@ a {
   color: var(--royalblue);
 }
 
+.home {
+  margin-top: 35px;
+}
+
 .home, .first-grouping, .second-grouping {
   margin-bottom: 35px;
 }
 
 .active {
   border-style: double;
-  border-color: var(--aquablue)
+  border-color: black;
+  background-color: rgba(117, 113, 113, 0.3);
 }
 
 main {
@@ -153,7 +161,10 @@ main {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  background-image: linear-gradient(rgba(255, 253, 253, 0.1), rgba(0, 0, 0, 0.3)), url("assets/shells.jpg");
+ }
+
+ .info h2 {
+  margin-bottom: 0;
  }
 
  .info li {
