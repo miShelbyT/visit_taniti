@@ -63,18 +63,46 @@ main {
 
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/tropical_beach.jpg");
-  height: 45%;
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
+.dining {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/dining.jpg");
+}
+
+.things_to_do {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/parasailing.jpg");
+}
+
+.lodging {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/lodging.jpg");
+}
+
+.transportation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/transportation.jpg");
+}
+
+.lodging .banner-text {
+  left: 70%;
+}
+
+.faqs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/FAQs.jpg");
+}
+
+.plan_your_visit {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/plan-visit.jpg");
+}
+
 .banner-text {
   text-align: center;
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 15%;
+  left: 60%;
   transform: translate(-50%, -50%);
   color: white;
 }
