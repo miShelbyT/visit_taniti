@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr) 0.35fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -39,6 +39,7 @@ nav ul {
 
 nav a {
   padding: 15px 10px;
+  color: var(--dimgray);
 }
 
 
@@ -46,6 +47,7 @@ a {
   text-decoration: none;
   display: block;
   cursor: pointer;
+  color: var(--royalblue);
 }
 
 .home, .first-grouping, .second-grouping {
@@ -58,11 +60,12 @@ a {
 }
 
 main {
-  grid-area: 1 / 2 / 5 / 6;
+  grid-area: 1 / 2 / 5 / 7;
+  overflow: scroll;
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/tropical_beach.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("assets/tropical_beach.jpg");
   height: 60%;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,31 +74,31 @@ main {
 }
 
 .dining {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/dining.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("assets/dining.jpg");
 }
 
 .things_to_do {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/parasailing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("assets/parasailing.jpg");
 }
 
 .lodging {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/lodging.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("assets/lodging.jpg");
 }
 
 .transportation {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/transportation.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("assets/transportation.jpg");
 }
 
-.lodging .banner-text {
+.uncentered .banner-text {
   left: 70%;
 }
 
 .faqs {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/FAQs.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("assets/FAQs.jpg");
 }
 
 .plan_your_visit {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("assets/plan-visit.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("assets/plan-visit.jpg");
 }
 
 .banner-text {
@@ -105,6 +108,7 @@ main {
   left: 60%;
   transform: translate(-50%, -50%);
   color: white;
+  width: 100%;
 }
 
 .top_section {
@@ -127,8 +131,23 @@ main {
   right: 5%;
 }
 
+.plan-trip {
+  background-color: var(--dimgray);
+}
+
+ .info {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-image: linear-gradient(rgba(255, 253, 253, 0.1), rgba(0, 0, 0, 0.3)), url("assets/shells.jpg");
+ }
+
+ .info li {
+  padding: 10px;
+ }
+
 footer {
-  grid-area: 5 / 1 / 6 / 6;
+  grid-area: 5 / 1 / 6 / 7;
   border-top: 1px solid var(--dimgray);
   text-align: center;
 }
