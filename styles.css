@@ -275,3 +275,41 @@ footer li {
 .copyright {
   font-size: 11px;
 }
+
+@media screen and (max-width: 1015px) {
+  h1 {
+    font-size: 1.25em;
+  }
+
+  .banner-text {
+    width: 70%;
+  }
+
+  .parent {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .top_section {
+    flex-direction: column;
+  }
+
+  .top_section .hidden {
+    display: none;
+  }
+
+  .contact-us {
+    justify-content: center;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+}
